@@ -145,6 +145,18 @@
     border: none;
     border-radius: 1rem;
 }
+.local-button{
+    width: 50%;
+}
+
+.button{
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: blue;
+    border-radius: 1rem;
+}
 
 @media screen and (min-width: 380px) {
     .pokemons {
@@ -162,4 +174,71 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+.pokemonModal {
+    margin: 30px;
+    padding: 30px;
+    border-radius: 1rem;
+    list-style: none;
+    background-color: #fff;;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemonModal .capa .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+.pokemonModal .capa .name {
+    color: #0e0101;
+    margin: 30px;
+}
+
+.pokemonModal .capa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemonModal .capa .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemonModal .capa .types .type {
+    color: #fff;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    margin: 10px;
+}
+
+.capa img {
+    max-width: 100%;
+    height: 80px;
+    margin: 40px;
+}
+
+.capa{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.detailModal{
+    text-align: center;
+}
+.detailModal .abilities{
+    list-style-type: circle;
+    margin: 30px;
+    padding:1px;
 }
